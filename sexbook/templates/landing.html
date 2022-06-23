@@ -1,16 +1,35 @@
 {% block content %}
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
 
 <style>
   body{
     background-image:url('/static/sexy.jpg');
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
   }
   .list1{
       float: right;
+      margin-right: 10px;
     }
 
     .list{
       padding-bottom: 1cm;
+    }
+    .explore{
+      background-color: skyblue;
+      border-radius: 3cm;
+      width: 7cm;
+      height:1cm;
+      margin-left: 2cm;
+    }
+    .texty{
+      margin-left: 1cm;
+      color: black;
     }
 </style>
 <body>
@@ -18,11 +37,14 @@
     <div class="row">
       <div class="col">
         <div class="list1">
-          <h1>Hello and Welcome to the <br> Sex-Eductaion-Booths
+          <h2> Sex-Eductaion-Booths
+            <hr>
           <br>
         Remember that age does not matter!!
+        <hr>
       <br>
-    Hence speak up</h1>
+    speak up</h2>
+    <hr>
 
 
     <div class="introduction2">
@@ -30,9 +52,18 @@
     </div>
           <ol>
             <li class="list"> <strong>SexIntroduction</strong> <br> (Ask questions whether or not you are new to sex) </li>
+            <hr>
             <li class="list" > <strong>Professional-room</strong> <br> (Chat with a professional)</li>
+            <hr>
             <li class="list" > <strong>Chit-Chat</strong> <br> (seen something questionable? ask about it to all)</li>
+            <hr>
           </ol>
+
+        <div class="explore">
+          <a href="{% url 'home' %}"> <h2 class="texty" >Proceed to Chat</h2> </a>
+        </div>
+
+
         </div>
       </div>
     </div>
